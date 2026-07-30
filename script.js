@@ -1,19 +1,19 @@
-// Product Array
+
 
 const products = [
     { id: 1, name: "Laptop", price: 50000 },
     { id: 2, name: "Mouse", price: 500 },
     { id: 3, name: "Keyboard", price: 1000 },
     { id: 4, name: "Headphone", price: 2000 },
-    { id: 5, name: "Mobile", price: 15000 },
+    { id: 5, name: "Mobile", price: 1 },
     { id: 6, name: "Tablet", price: 20000 }
 ];
 
-// Shopping Cart
+
 
 let cart = [];
 
-// Add Product to Cart
+
 
 function addToCart(id) {
 
@@ -29,7 +29,7 @@ function addToCart(id) {
     }
 }
 
-// Display Cart
+
 
 function displayCart() {
 
@@ -60,7 +60,7 @@ function displayCart() {
     document.getElementById("total").innerHTML = "Total : ₹" + total;
 }
 
-// Remove Product
+
 
 function removeItem(index) {
 
@@ -72,7 +72,7 @@ function removeItem(index) {
     }
 }
 
-// Checkout
+
 
 function checkout() {
 
