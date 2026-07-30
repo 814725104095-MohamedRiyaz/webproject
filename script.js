@@ -5,7 +5,7 @@ const products = [
     { id: 2, name: "Mouse", price: 500 },
     { id: 3, name: "Keyboard", price: 1000 },
     { id: 4, name: "Headphone", price: 2000 },
-    { id: 5, name: "Mobile", price: 14444 },
+    { id: 5, name: "Mobile", price: 1},
     { id: 6, name: "Tablet", price: 20000 }
 ];
 
