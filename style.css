@@ -1,0 +1,205 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background:#f8fafc;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:32px;
+}
+
+/* Section */
+
+section{
+    width:90%;
+    margin:30px auto;
+}
+
+
+
+#product-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    width:500px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    padding:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.product img{
+   height: 100px;
+   width: fit-content;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+}
+
+.product h3{
+    margin-bottom:10px;
+    color:#007bff;
+}
+
+.product p{
+    margin:8px 0;
+    font-size:18px;
+}
+
+.feature{
+    height: 120px;
+    overflow: hidden;
+    text-align: justify;
+    margin: 10px 0;
+    font-family: 'poppins',sans-serif;
+}
+
+/* Buttons */
+
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0f172a;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+table th{
+    background:#0f172a;
+    color:white;
+    padding:15px;
+    
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+/* Remove Button */
+
+.remove-btn{
+    background:red;
+}
+
+.remove-btn:hover{
+    background:darkred;
+}
+
+/* Total */
+
+#total{
+    margin-top:20px;
+    text-align:right;
+    color:#FFD700;
+    font-size:28px;
+}
+
+/* Checkout Button */
+
+.cart button{
+    margin-top:20px;
+    float:right;
+    background:#FFD700;
+    color: black;
+}
+
+.cart button:hover{
+    background:#0f172a;
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    margin-top:80px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Horizontal Line */
+
+hr{
+    width:90%;
+    margin:auto;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    #product-list{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .product{
+        width:90%;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    #total{
+        text-align:center;
+        font-size:24px;
+    }
+
+    .cart button{
+        width:100%;
+        float:none;
+    }
+
+}
